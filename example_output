@@ -1,0 +1,12 @@
+Variable expansion --
+DOESNTEXIST: 
+PWD: /home/ian/github/bash-unsafe-templates
+
+Arithmetic expansion:
+2+2=4
+
+Command substitution:
+$() style expansion: hi
+Backtick expansion: yep
+
+Warning! Don't forget to escape "double quotes"!
