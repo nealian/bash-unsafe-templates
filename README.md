@@ -14,7 +14,7 @@ Templates are text files with bash expansions, and with escaped double-quotes.
 `but.sh` will expand the following:
 * `$VAR` and `${VAR}` (and `${ARRAY[@]}` and other more complicated variable expansions)
 * `$(())` arithmetic expansions
-* Backtick (`\`\``) and paren-style (`$()`) command substitions
+* Backtick (``` `` ```) and paren-style (`$()`) command substitions
 
 As mentioned above, templates must have any double-quotes escaped (a la `\"`).
 
