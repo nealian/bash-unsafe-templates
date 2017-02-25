@@ -1,5 +1,6 @@
 # bash-unsafe-templates (but.sh)
 A rather unsafe, very trusting templating parser for bash
+Based on [http://serverfault.com/questions/287688/templating-with-linux-in-a-shell-script](http://serverfault.com/questions/287688/templating-with-linux-in-a-shell-script)
 
 ## Downloading
     wget https://raw.github.com/nealian/bash-unsafe-templates/master/but.sh
