@@ -4,7 +4,7 @@ A rather unsafe, very trusting templating parser for bash
 Based on [http://serverfault.com/questions/287688/templating-with-linux-in-a-shell-script/#699377](http://serverfault.com/questions/287688/templating-with-linux-in-a-shell-script/#699377)
 
 ## Downloading
-    wget https://raw.github.com/nealian/bash-unsafe-templates/master/but.sh
+    wget https://raw.github.com/nealian/bash-unsafe-templates/master/but.sh && chmod +x but.sh
 
 ## Environment
 The current shell environment is used, and additional variables may be set in two ways:
