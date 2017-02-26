@@ -24,7 +24,7 @@ Templates are text files with bash expansions, and with escaped double-quotes an
 As mentioned above, templates must have any double-quotes and backslashes escaped (a la `\"` and `\\`).
 
 ## Example
-This repository includes an example template and its output
+This repository includes an example template and its output.  Additionally, [this gist](https://gist.github.com/nealian/b3e40c8a7326ebea389e5fb97b3eeea3) includes the template I actually initially built this for.
 
 ## Usage
 `but.sh <template-file> [-o|--output <output-file>] [[[-c|--config] <config-file>] ...]`
