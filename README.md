@@ -12,13 +12,13 @@ The current shell environment is used, and additional variables may be set in tw
 * Additionally, environment files may be sourced with the `-c` and `--config` flags (and any filenames at the end of the arguments)
 
 ## Templates
-Templates are text files with bash expansions, and with escaped double-quotes.
+Templates are text files with bash expansions, and with escaped double-quotes and backslashes.
 `but.sh` will expand the following:
 * `$VAR` and `${VAR}` (and `${ARRAY[@]}` and other more complicated variable expansions)
 * `$(())` arithmetic expansions
 * Backtick (``` `` ```) and paren-style (`$()`) command substitions
 
-As mentioned above, templates must have any double-quotes escaped (a la `\"`).
+As mentioned above, templates must have any double-quotes and backslashes escaped (a la `\"` and `\\`).
 
 ## Example
 This repository includes an example template and its output
