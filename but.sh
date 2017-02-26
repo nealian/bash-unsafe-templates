@@ -17,7 +17,7 @@ expand()
 
 [[ $# -eq 0 ]] && usage && exit 1;
 
-BUT_template_file="$1"
+BUT_template_file=$1
 BUT_output_file=""
 BUT_config_files=""
 shift
@@ -46,7 +46,11 @@ while [[ $# -gt 0 ]]; do
 done
 
 for BUT_conf_file in $BUT_config_files; do
-    source "$BUT_conf_file"
+    source $BUT_conf_file
 done
 
-expand "$BUT_template_file"
+if [[ -n "$BUT_output_file" ]]; then
+    expand $BUT_template_file > $BUT_output_file
+else
+    expand $BUT_template_file
+fi
