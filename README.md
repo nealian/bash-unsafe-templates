@@ -21,7 +21,16 @@ Templates are text files with bash expansions, and with escaped double-quotes an
 * `$(())` arithmetic expansions
 * Backtick (``` `` ```) and paren-style (`$()`) command substitions
 
-As mentioned above, templates must have any double-quotes and backslashes escaped (a la `\"` and `\\`).
+### Literal character escapes (backslash-escapes):
+#### Outside of expansions:
+* `` ` `` may be printed in the output with `` \` ``
+* `$` may be printed in the output with `\$`
+* `\` may be printed in the output with `\\`
+* `"` may be printed in the output with `\"`
+* All other characters will be printed normally
+
+#### Inside expansions:
+* See the [bash manual](https://www.gnu.org/software/bash/manual/bashref.html)
 
 ## Example
 This repository includes an example template and its output.  Additionally, [this gist](https://gist.github.com/nealian/b3e40c8a7326ebea389e5fb97b3eeea3) includes the template I actually initially built this for.
