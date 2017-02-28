@@ -25,9 +25,12 @@ Templates are text files with bash expansions, and with escaped double-quotes an
 #### Outside of expansions:
 * `` ` `` may be printed in the output with `` \` ``
 * `$` may be printed in the output with `\$`
-* `\` may be printed in the output with `\\`
 * `"` may be printed in the output with `\"`
+* `\` may be printed in the output unescaped in most cases
+ * If it is to be followed immediately by a `` ` ``, a `$`, a `"`, a newline, or another `\`, it must be escaped with `\\`
 * All other characters will be printed normally
+
+These follow the rules of a bash [here-document](https://www.gnu.org/software/bash/manual/bashref.html#Here-Documents)
 
 #### Inside expansions:
 * See the [bash manual](https://www.gnu.org/software/bash/manual/bashref.html)
