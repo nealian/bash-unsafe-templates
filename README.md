@@ -1,6 +1,8 @@
 # bash-unsafe-templates (but.sh)
 A rather unsafe, very trusting templating parser for bash
 
+`but.sh` takes a template file, consisting of plaintext and expansions-to-parse, expands the embedded bash expansions (a la here-doc), and outputs the result to the command line or to a file, depending on its invocation.
+
 Based on [http://serverfault.com/questions/287688/templating-with-linux-in-a-shell-script/#699377](http://serverfault.com/questions/287688/templating-with-linux-in-a-shell-script/#699377)
 
 ## Prerequisites
