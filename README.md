@@ -4,7 +4,7 @@ A rather unsafe, very trusting templating engine that lets you use bash as your 
 Based on [http://serverfault.com/questions/287688/templating-with-linux-in-a-shell-script/#699377](http://serverfault.com/questions/287688/templating-with-linux-in-a-shell-script/#699377)
 
 ## Prerequisites
-`but.sh` requires only `bash` and `gnu-coreutils` (for `basename` and `cat`)
+`but.sh` requires only `bash`
 
 ## Downloading
     wget https://raw.github.com/nealian/bash-unsafe-templates/master/but.sh && chmod +x but.sh

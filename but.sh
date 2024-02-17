@@ -2,7 +2,7 @@
 
 # Based on http://serverfault.com/questions/287688/templating-with-linux-in-a-shell-script
 
-PROG=$(basename $0)
+PROG=${0##*/}
 
 usage()
 {
@@ -11,7 +11,7 @@ usage()
 
 expand()
 {
-    local template="$(cat $1)"
+    local template="$(<$1)"
     eval "echo \"${template}\""
 }
 
